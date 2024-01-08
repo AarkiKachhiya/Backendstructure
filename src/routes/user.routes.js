@@ -1,9 +1,9 @@
 import { Router } from "express";
 import registerUser from "../controllers/user.controller.js";
-import { upload } from "../middlewares/multer.middleware.js";
-
+import {upload} from "../middlewares/multer.middleware.js"
 const router=Router()
 
+//middleware is use for get files using multer
 router.route("/register").post(
 upload.fields([
         {
